@@ -4,101 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="testJS.css" >
-	<title>EasyCode.By</title>
-</head>
-	<script>/* смена HTMLPanel */
-		function Load(){
-			swapHTML();
-			HTMLBack();
-			swapCSS();
-			CSSBack();
-			swapJS();
-			JSBack();
-			swapHTMLT;
-			HTMLTBack();
-			swapCSST;
-			CSSTBack();
-			swapJST();
-			JSTBack();
-		}
-	</script>
-<body bgcolor = "#F5F5DC"  background="../img/BackGroud.jpg"  onload="Load()">
-	<a href="../index.html">
-		<div id ="Top"><img src="../img/Line.png"  max-width="600px" > 	<br>
- 			<img src="../img/Logo.png"><br>
-			<img src="../img/Line.png"  max-width="600px" > 
-		</div>
-	</a> 
-	<div id="Navig"><img src="../img/Line.png"  width="155"><br>
-		<a href="../HTML/HTML.html">
-			<div id="HTML" onmouseover="swapHTML();" onmouseout="HTMLBack();"><img src="../img/HTML.png"></div>
-		</a>
-		<a href="../HTML/testHTML.html">
-			<div class="ListTest" onmouseover="swapHTMLT();" onmouseout="HTMLTBack();"><img src="../img/TestLogo.png"></div>
-		</a><br>
-		<a href="../CSS/CSS.html">
-			<div id="CSS" onmouseover="swapCSS();" onmouseout="CSSBack();"><img src="../img/CSS.png"></div>
-		</a>
-		<a href="../CSS/testCSS.html">
-			<div class="ListTest" onmouseover="swapCSST();" onmouseout="CSSTBack();"><img src="../img/TestLogo.png"></div>
-		</a><br>
-		<a href="../JS/JS.html">
-			<div id="JS" onmouseover="swapJS();" onmouseout="JSBack();"><img src="../img/JS.png"></div>
-		</a>
-		<a>
-			<div id="Test" onmouseover="swapJST();" onmouseout="JSTBack();"><img src="../img/TestLogo.png"> </div>
-		</a>
-		<img src="../img/Line.png"  width="155px"><br>
-		<div id="clock"></div>
-	</div>
-	<div id="Panel"><br></div>
-	<div id ="Table"><br><img src="../img/Line.png"  max-width="800px"><br>
-		<p>Выполните задания теста:</p>
-		<h6>(Ответы указываются с маленькой буквы.)</h6>
-		<p class="Text">JavaScript добавляется на веб-страницы с помощью тэга  &lt;<a class="Code">... </a>&gt; <br><input type="text" id="z_1"></p>
-		<p class="Text">JavaScript код также может храниться во внешнем текстовом файле с расширением<a class="Code">... </a> и подключаться к страницам с помощью тэга. <br><br><input type="text" id="z_2"></p>
-		<p class="Text"> Метод<a class="Code">... </a>() позволяет выводить диалоговое окно (окно оповещения) с заданным сообщением и кнопкой ОК. Используется в случаях, когда необходимо, чтобы пользователь обязательно обратил внимание на определенную информацию.<br><input type="text" id="z_3"></p>
-		<p class="Text">Метод<a class="Code">... </a>() позволяет вывести диалоговое окно (окно подтверждения) с сообщением и двумя кнопками – ОК и Отмена (Cancel). Используется в случаях, когда необходимо, чтобы пользователь подтвердил или отклонил что-либо. Если пользователь щелкнул на кнопке ОК, то возвращается значение true; если щелкнул на кнопке Отмена, то возвращается значение false.<br><input type="text" id="z_4"></p>
-		<p class="Text">Метод <a class="Code">... </a>() позволяет вывести на экран диалоговое окно (окно запроса) с сообщением, а также с текстовым полем, в которое пользователь может ввести данные. Используются в случаях, когда от пользователя необходимо получить определенную информацию. В этом окне предусмотрены две кнопки: ОК и Отмена (Cancel).<br><input type="text" id="z_5"></p>
-		
-		<button onClick="proverit();">Проверить</button>
-		<div id="rezultat"></div>
-		<script>
-			function proverit(){
-				pr_otv_1 = "script"; 
-				pr_otv_2 = ".js";
-				pr_otv_3 = "alert";
-				pr_otv_4 = "confirm"; 
-				pr_otv_5 = "style";
-				otv_uch_1 = document.getElementById('z_1').value;
-				otv_uch_2 = document.getElementById('z_2').value;
-				otv_uch_3 = document.getElementById('z_3').value;
-				otv_uch_4 = document.getElementById('z_4').value;
-				otv_uch_5 = document.getElementById('z_5').value;
-				ball = 0;
-				if(otv_uch_1 == pr_otv_1){
-					ball +=1;
-				}
-				if(otv_uch_2 == pr_otv_2){
-					ball +=1;
-				}
-				if(otv_uch_3 == pr_otv_3){
-					ball +=1;
-				}if(otv_uch_4 == pr_otv_4){
-					ball +=1;
-				}
-				if(otv_uch_5 == pr_otv_5){
-					ball +=1;
-				}
-				vsego_zadach = 5;
-				procent_vip = ball * 20;
-				document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
-			}
-		</script> <br>
-    	<img src="../img/Line.png"  max-width="800px"><br><br>
-	</div>
-	<div id="Finish"><br><img src="../img/Finish.png"  >
-	</div>		
+	<title>EasyCode.By</title>		
 	<script>/* смена HTMLPanel */
 		function swapHTML(){
 			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
@@ -180,7 +86,85 @@
 		};
 		if(isMobile.Android()){
 		location.href='MtestJS.html';
-}
+		}
 	</script>
+</head>
+<body bgcolor = "#F5F5DC"  background="../img/BackGroud.jpg">
+	<a href="../index.html">
+		<div id ="Top"><img src="../img/Line.png"  max-width="600px" > 	<br>
+ 			<img src="../img/Logo.png"><br>
+			<img src="../img/Line.png"  max-width="600px" > 
+		</div>
+	</a> 
+	<div id="Navig"><img src="../img/Line.png"  width="155"><br>
+		<a href="../HTML/HTML.html">
+			<div id="HTML" onmouseover="swapHTML();" onmouseout="HTMLBack();"><img src="../img/HTML.png"></div>
+		</a>
+		<a href="../HTML/testHTML.html">
+			<div class="ListTest" onmouseover="swapHTMLT();" onmouseout="HTMLTBack();"><img src="../img/TestLogo.png"></div>
+		</a><br>
+		<a href="../CSS/CSS.html">
+			<div id="CSS" onmouseover="swapCSS();" onmouseout="CSSBack();"><img src="../img/CSS.png"></div>
+		</a>
+		<a href="../CSS/testCSS.html">
+			<div class="ListTest" onmouseover="swapCSST();" onmouseout="CSSTBack();"><img src="../img/TestLogo.png"></div>
+		</a><br>
+		<a href="../JS/JS.html">
+			<div id="JS" onmouseover="swapJS();" onmouseout="JSBack();"><img src="../img/JS.png"></div>
+		</a>
+		<a>
+			<div id="Test" onmouseover="swapJST();" onmouseout="JSTBack();"><img src="../img/TestLogo.png"> </div>
+		</a>
+		<img src="../img/Line.png"  width="155px"><br>
+		<div id="clock"></div>
+	</div>
+	<div id="Panel"><br></div>
+	<div id ="Table"><br><img src="../img/Line.png"  max-width="800px"><br>
+		<p>Выполните задания теста:</p>
+		<h6>(Ответы указываются с маленькой буквы.)</h6>
+		<p class="Text">JavaScript добавляется на веб-страницы с помощью тэга  &lt;<a class="Code">... </a>&gt; <br><input type="text" id="z_1"></p>
+		<p class="Text">JavaScript код также может храниться во внешнем текстовом файле с расширением<a class="Code">... </a> и подключаться к страницам с помощью тэга. <br><br><input type="text" id="z_2"></p>
+		<p class="Text"> Метод<a class="Code">... </a>() позволяет выводить диалоговое окно (окно оповещения) с заданным сообщением и кнопкой ОК. Используется в случаях, когда необходимо, чтобы пользователь обязательно обратил внимание на определенную информацию.<br><input type="text" id="z_3"></p>
+		<p class="Text">Метод<a class="Code">... </a>() позволяет вывести диалоговое окно (окно подтверждения) с сообщением и двумя кнопками – ОК и Отмена (Cancel). Используется в случаях, когда необходимо, чтобы пользователь подтвердил или отклонил что-либо. Если пользователь щелкнул на кнопке ОК, то возвращается значение true; если щелкнул на кнопке Отмена, то возвращается значение false.<br><input type="text" id="z_4"></p>
+		<p class="Text">Метод <a class="Code">... </a>() позволяет вывести на экран диалоговое окно (окно запроса) с сообщением, а также с текстовым полем, в которое пользователь может ввести данные. Используются в случаях, когда от пользователя необходимо получить определенную информацию. В этом окне предусмотрены две кнопки: ОК и Отмена (Cancel).<br><input type="text" id="z_5"></p>
+		
+		<button onClick="proverit();">Проверить</button>
+		<div id="rezultat"></div>
+		<script>
+			function proverit(){
+				pr_otv_1 = "script"; 
+				pr_otv_2 = ".js";
+				pr_otv_3 = "alert";
+				pr_otv_4 = "confirm"; 
+				pr_otv_5 = "style";
+				otv_uch_1 = document.getElementById('z_1').value;
+				otv_uch_2 = document.getElementById('z_2').value;
+				otv_uch_3 = document.getElementById('z_3').value;
+				otv_uch_4 = document.getElementById('z_4').value;
+				otv_uch_5 = document.getElementById('z_5').value;
+				ball = 0;
+				if(otv_uch_1 == pr_otv_1){
+					ball +=1;
+				}
+				if(otv_uch_2 == pr_otv_2){
+					ball +=1;
+				}
+				if(otv_uch_3 == pr_otv_3){
+					ball +=1;
+				}if(otv_uch_4 == pr_otv_4){
+					ball +=1;
+				}
+				if(otv_uch_5 == pr_otv_5){
+					ball +=1;
+				}
+				vsego_zadach = 5;
+				procent_vip = ball * 20;
+				document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+			}
+		</script> <br>
+    	<img src="../img/Line.png"  max-width="800px"><br><br>
+	</div>
+	<div id="Finish"><br><img src="../img/Finish.png"  >
+	</div>
 </body>
 </html>

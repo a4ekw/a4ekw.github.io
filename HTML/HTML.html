@@ -5,6 +5,80 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="HTML.css" >
 	<title>EasyCode.By</title>
+	<script>/* смена CSSPanel */
+		function swapCSS(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSCode.png)";
+		}
+		function CSSBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
+		}
+	</script>
+	<script>/* смена JSPanel*/
+		function swapJS(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/JSCode.png)";
+		}
+		function JSBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
+		}
+	</script>
+	<script>/* смена HTMLTestPanel */
+		function swapHTMLT(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLTest.png)";
+		}
+		function HTMLTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
+		}
+	</script>	
+	<script>/* смена CSSTestPanel */
+		function swapCSST(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
+		}
+		function CSSTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
+		}
+	</script>
+	<script>/* смена JSTestPanel*/
+		function swapJST(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/JSTest.png)";
+		}
+		function JSTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
+		}
+	</script>	
+	<script>/* часы */
+		window.onload = function(){
+		window.setInterval(function(){
+			var now = new Date();
+			var clock = document.getElementById("clock");
+			clock.innerHTML = now.toLocaleTimeString();
+			}, 1000);
+		};
+	</script>
+	<script>
+		var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+			}
+		};
+		if(isMobile.Android()){
+		location.href='MHTML.html';
+		}
+	</script>
 </head>
 <body bgcolor = "#F5F5DC"  background="../img/BackGroud.jpg" >
 	<a href="../index.html">
@@ -117,79 +191,5 @@
 		<img src="../img/Line.png"  max-width="800px"><br><br>
 	</div>
 	<div id="Finish"><br><img src="../img/Finish.png"  ></div>
-	<script>/* смена CSSPanel */
-		function swapCSS(){
-			document.getElementById('Panel').style.backgroundImage="url(../img/CSSCode.png)";
-		}
-		function CSSBack(){ 
-			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
-		}
-	</script>
-	<script>/* смена JSPanel*/
-		function swapJS(){
-			document.getElementById('Panel').style.backgroundImage="url(../img/JSCode.png)";
-		}
-		function JSBack(){ 
-			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
-		}
-	</script>
-	<script>/* смена HTMLTestPanel */
-		function swapHTMLT(){
-			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLTest.png)";
-		}
-		function HTMLTBack(){ 
-			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
-		}
-	</script>	
-	<script>/* смена CSSTestPanel */
-		function swapCSST(){
-			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
-		}
-		function CSSTBack(){ 
-			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
-		}
-	</script>
-	<script>/* смена JSTestPanel*/
-		function swapJST(){
-			document.getElementById('Panel').style.backgroundImage="url(../img/JSTest.png)";
-		}
-		function JSTBack(){ 
-			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
-		}
-	</script>	
-	<script>/* часы */
-		window.onload = function(){
-		window.setInterval(function(){
-			var now = new Date();
-			var clock = document.getElementById("clock");
-			clock.innerHTML = now.toLocaleTimeString();
-			}, 1000);
-		};
-	</script>
-	<script>
-		var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-			}
-		};
-		if(isMobile.Android()){
-		location.href='MHTML.html';
-}
-	</script>
 </body>
 </html>

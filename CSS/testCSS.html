@@ -4,25 +4,74 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="testCSS.css" >
-	<title>EasyCode.By</title>
-</head>
+	<title>EasyCode.By</title>		
 	<script>/* смена HTMLPanel */
-		function Load(){
-			swapHTML();
-			HTMLBack();
-			swapCSS();
-			CSSBack();
-			swapJS();
-			JSBack();
-			swapHTMLT;
-			HTMLTBack();
-			swapCSST;
-			CSSTBack();
-			swapJST();
-			JSTBack();
+		function swapHTML(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
+		}
+		function HTMLBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
 		}
 	</script>
-<body bgcolor = "#F5F5DC"  background="../img/BackGroud.jpg"  onload="Load()">
+	<script>/* смена CSSPanel */
+		function swapCSS(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSCode.png)";
+		}
+		function CSSBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
+		}
+	</script>
+	<script>/* смена JSPanel*/
+		function swapJS(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/JSCode.png)";
+		}
+		function JSBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
+		}
+	</script>
+	<script>/* смена HTMLTestPanel */
+		function swapHTMLT(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLTest.png)";
+		}
+		function HTMLTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
+		}
+	</script>
+	<script>/* смена JSTestPanel*/
+		function swapJST(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/JSTest.png)";
+		}
+		function JSTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
+		}
+	</script>	
+	<script>
+		var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+			}
+		};
+		if(isMobile.Android()){
+		location.href='MtestCSS.html';
+		}
+	</script>
+</head>
+<body bgcolor = "#F5F5DC"  background="../img/BackGroud.jpg">
 	
 	<a href="../index.html">
 		<div id ="Top"><img src="../img/Line.png"  max-width="600px" > 	<br>
@@ -98,71 +147,6 @@
     	<img src="../img/Line.png"  max-width="800px"><br><br>
 	</div>
 	<div id="Finish"><br><img src="../img/Finish.png"  >
-	</div>		
-	<script>/* смена HTMLPanel */
-		function swapHTML(){
-			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
-		}
-		function HTMLBack(){ 
-			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
-		}
-	</script>
-	<script>/* смена CSSPanel */
-		function swapCSS(){
-			document.getElementById('Panel').style.backgroundImage="url(../img/CSSCode.png)";
-		}
-		function CSSBack(){ 
-			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
-		}
-	</script>
-	<script>/* смена JSPanel*/
-		function swapJS(){
-			document.getElementById('Panel').style.backgroundImage="url(../img/JSCode.png)";
-		}
-		function JSBack(){ 
-			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
-		}
-	</script>
-	<script>/* смена HTMLTestPanel */
-		function swapHTMLT(){
-			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLTest.png)";
-		}
-		function HTMLTBack(){ 
-			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
-		}
-	</script>
-	<script>/* смена JSTestPanel*/
-		function swapJST(){
-			document.getElementById('Panel').style.backgroundImage="url(../img/JSTest.png)";
-		}
-		function JSTBack(){ 
-			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
-		}
-	</script>	
-	<script>
-		var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-			}
-		};
-		if(isMobile.Android()){
-		location.href='MtestCSS.html';
-}
-	</script>
+	</div>
 </body>
 </html>
