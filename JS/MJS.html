@@ -1,0 +1,300 @@
+﻿<!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="MJS.css" >
+	<link rel="stylesheet" type="text/css" href="../MNavig.css" >
+	<title>EasyCode.By</title>
+</head>
+<body bgcolor = "#F5F5DC"  background="../img/BackGroud.jpg" >
+	<div id ="Top"><img src="../img/Line.png"  max-width="600px" > 	<br>
+ 			<img src="../img/Logo.png"><br>
+			<img src="../img/Line.png"  max-width="600px" > 
+		</div>
+	<div id ="Table"><br><img src="../img/Line.png"  max-width="800px"><br> 
+		<h2>JavaScript</h2>
+		<div class="Scroll">&nbsp;
+			<h3 style="text-align: center;">Ввод и вывод данных</h3>&nbsp;
+    		JavaScript  был  создан  в  1995  году  как инструмент, предоставляющий  веб-дизайнерам возможности  программирования. Все  современные  браузеры  имеют  поддержку  JavaScript. JavaScript встраивается прямо в веб-страницы и исполняется браузером во время их загрузки.<br>&nbsp; 
+			JavaScript добавляется на веб-страницы с помощью тэга &lt;script&gt;.<br>&nbsp; 
+			В  следующем  примере  на  страницу  выводится  текст  «Я  изучаю 
+			JavaScript»:<br><br>&nbsp; 
+ 			<p class="Code">
+				&lt;script type="text/javascript"&gt; <br>&nbsp;
+				document.write("Я изучаю JavaScript."); <br>&nbsp;
+				&lt;/script&gt;
+			</p> <br>&nbsp;
+ 			JavaScript  код  также  может  храниться  во  внешнем  текстовом файле с расширением <a class="HL">.js</a> и подключаться к страницам с помощью тэга &lt;script&gt; следующим образом: 
+	    	<p class="Code">  <br><br>&nbsp;
+				&lt;script type="text/javascript" src="ex.js"&gt;&lt;/script&gt; 
+			</p><br><br>&nbsp;
+ 			JavaScript чувствителен к регистру букв.<br>&nbsp;  
+			В  JavaScript  существует  два  вида  комментариев:  короткие  и 
+			длинные. Все, что находится после символа <a class="HL">//</a> до конца строки, будет являться  коротким  комментарием. Многострочные  комментарии начинаются с <a class="HL">/*</a> и заканчиваются <a class="HL">*/</a>.<br>&nbsp;
+			В JavaScript предусмотрены три стандартных метода для ввода и вывода данных: <a class="HL">alert()</a>, <a class="HL">prompt()</a> и <a class="HL">confirm()</a>.<br>&nbsp; 
+		  	Метод  <a class="HL">alert()</a> позволяет выводить диалоговое окно (окно оповещения) с заданным сообщением и кнопкой ОК. Используется в случаях, когда необходимо, чтобы пользователь обязательно обратил внимание на определенную информацию.<br>&nbsp;  
+		 	Метод <a class="HL">confirm()</a> позволяет вывести диалоговое окно (окно подтверждения) с сообщением и двумя кнопками – ОК и Отмена (Cancel). Используется в случаях, когда необходимо, чтобы пользователь подтвердил или отклонил что-либо. Если пользователь
+		  	щелкнул на кнопке ОК, то возвращается значение <a class="HL">true</a>; если щелкнул на кнопке Отмена, то возвращается значение <a class="HL">false</a>.<br>&nbsp;  
+		  	Метод  <a class="HL">prompt()</a> позволяет вывести на экран диалоговое окно (окно запроса) с сообщением, а также с текстовым полем, в которое пользователь может ввести данные. Используются в случаях, когда от пользователя необходимо получить  определенную информацию. В этом  окне  предусмотрены две кнопки: ОК и Отмена (Cancel). В отличие от методов <a class="HL">alert()</a> и <a class="HL">confirm()</a> данный метод принимает два параметра: сообщение и значение, которое должно появиться  в текстовом поле ввода данных по умолчанию.<br>&nbsp;  
+			Пример применения методов для ввода и вывода данных:<br><br>&nbsp; 
+ 			<p class="Code">
+				&lt;html&gt; <br>&nbsp;
+				&lt;head&gt; <br>&nbsp;
+				&lt;script type='text/javascript'&gt; <br>&nbsp;
+				function fun1() { <br>&nbsp;
+   					alert('Я окно оповещения'); <br>&nbsp;
+				} <br>&nbsp;
+				function fun2() { <br>&nbsp;
+  					 confirm('Я окно подтверждения'); <br>&nbsp;
+				} <br>&nbsp;
+				function fun3() { <br>&nbsp;
+   					x=prompt('Введите Ваше имя:', 'Имя'); <br>&nbsp;
+   					document.write('Здравствуйте, '+ x); <br>&nbsp;
+   				} <br>&nbsp;
+				&lt;/script&gt; <br>&nbsp;
+				&lt;/head&gt; <br>&nbsp;
+				&lt;body&gt; <br>&nbsp;
+				&lt;input type='button' value='Окно оповещения' onclick='fun1()' /&gt; <br>&nbsp;
+				&lt;input type='button' value='Окно подтверждения' onclick='fun2()' /&gt; <br>&nbsp;
+				&lt;input type='button' value='Окно запроса' onclick='fun3()' /&gt; <br>&nbsp;
+				&lt;/body&gt; <br>&nbsp;
+				&lt;/html&gt;<br>&nbsp;
+			</p>
+		</div>
+    <img src="../img/Line.png"  max-width="800px"><br>
+	<h2>Типы данных</h2>
+	<div class="Scroll"><br>&nbsp;
+		Типы данных представлены в таблице.<br><br>
+		<img src="../img/JS/pic1.png"  max-width="800px">
+	</div>
+	<img src="../img/Line.png"  max-width="800px"><br>
+	<h2>Операторы</h2>
+	<div class="Scroll"><br>&nbsp;
+		<h3 style="text-align: center;">Арифметические операторы</h3><br>&nbsp;  
+		Арифметические операторы используются для выполнения арифметических операций над переменными или значениями.<br><br>
+		<img src="../img/JS/pic2.png"  max-width="600px"><br>&nbsp;	
+		Чтобы уменьшить размер кода, можно использовать сокращенную запись арифметических операций. Например, вместо x= x + y писать x+ = y.<br>&nbsp;
+		<h3 style="text-align: center;">Операторы сравнения</h3> <br>&nbsp;
+		Операторы сравнения представлены в таблице:<br><br>
+		<img src="../img/JS/pic3.png"  max-width="600px"><br>&nbsp;
+		Оператор «равно» записывается с помощью двух символов без пробелов между ними.<br>&nbsp;
+		<h3 style="text-align: center;">Логические операторы</h3><br>&nbsp;
+		Логические данные, обычно получаемые с помощью элементарных выражений, содержащих операторы сравнения, можно объединять в более сложные  вражения. Для этого используются логические (булевские) операторы: И (&amp;&amp;), ИЛИ (||), НЕ (!). Выражения с логическими операторами возвращают значение <a class="HL">true</a> или <a class="HL">false</a>.<br>&nbsp;
+		<h3 style="text-align: center;">Операторы условного перехода</h3><br>&nbsp;
+		Оператор условного перехода if позволяет реализовать структуру условного выражения если ..., то ..., иначе ...<br>&nbsp; 
+		Пример оператора if перехода:<br><br>&nbsp;
+		<a class="Code">
+			if (sr_ball&gt;=5) <br>&nbsp;
+				{document.write("Стипендия есть"); } <br>&nbsp;
+			else <br>&nbsp;
+			{document.write("Стипендии нету"); }<br>&nbsp;
+		</a><br>&nbsp;
+		В фигурных скобках располагается блок кода – несколько выражений. Если в блоке используется одна команда, то фигурные скобки можно не писать.<br>&nbsp; 
+		Оператор <a class="HL">Switch</a> (переключатель) удобно использовать, если требуется проверить несколько условий, которые не являются взаимоисключающими. <br>&nbsp; 
+		Пример оператора <a class="HL">switch</a>:<br><br>&nbsp;
+		<a class="Code">
+			switch (sr_ball)<br>&nbsp;  
+			{ <br>&nbsp;
+				case 5: document.write("Стипендия минимальная") <br>&nbsp;
+				case 6: document.write("Стипендия с коэффициентом 1,2") <br>&nbsp;
+				case 9: document.write("Стипендия с коэффициентом 1,4") <br>&nbsp;
+			} <br>&nbsp;
+		</a>
+	</div>
+	<img src="../img/Line.png"  max-width="800px"><br>
+	<h2>Функции</h2>
+	<div class="Scroll"><br>&nbsp;
+		Функция представляет собой подпрограмму, которую можно вызвать для выполнения, обратившись к ней по имени. Взаимодействие функции с внешней программой, из которой она была вызвана, происходит путем передачи функции параметров и приема от нее результата вычислений. Функция в JavaScript может и не требовать параметров, а также ничего не возвращать.<br>&nbsp; 
+		В JavaScript есть встроенные функции, которые можно использовать в программах, но код которых нельзя редактировать или посмотреть.  Пользователь  также  может  создать  свои  функции  для решения конкретных задач – пользовательские.<br>&nbsp; 
+		Описание функции имеет следующий синтаксис:<br><br>&nbsp; 
+		<a class="Code">
+			function имя_функции(параметры){ 
+				код 
+			} 
+		</a><br><br>&nbsp;
+		Функция <a class="HL">messageWrite()</a> в примере ниже будет выполнена только после нажатия на кнопку. В примере используется событие onclick.<br><br>&nbsp;  
+		<a class="Code">
+			&lt;html&gt; <br>&nbsp;
+			&lt;head&gt; <br>&nbsp;
+			&lt;script type='text/javascript'&gt;&nbsp;
+			<xmp>/* Функция выводит текст на страницу*/</xmp>&nbsp; 
+			function messageWrite() { <br>&nbsp; 
+	   			document.write('Текст выводится на страницу с помощью 
+				JavaScript!'); <br>&nbsp; 
+			} <br>&nbsp; 
+			&lt;/script&gt; <br>&nbsp; 
+			&lt;/head&gt; <br>&nbsp; 
+			&lt;body&gt; <br>&nbsp; 
+			&lt;input type='button' value='Нажми на меня' onclick='messageWrite()' /&gt; <br>&nbsp; 
+			&lt;/body&gt; <br>&nbsp; 
+			&lt;/html&gt;<br>&nbsp; 
+		</a>		
+	</div>
+	<img src="../img/Line.png"  max-width="800px"><br>
+	<h2>Операторы цикла</h2>	
+	<div class="Scroll"><br>&nbsp;
+		Цикл – это блок команд, который может повторно выполняться, пока определенное условие не будет выполнено.<br>&nbsp; 
+		JavaScript поддерживает 3 вида циклов: <a class="HL">for</a>, <a class="HL">while</a>, <a class="HL">do..while</a>.<br>&nbsp; 
+  		<h3 style="text-align: center;">Оператор <a class="HL">for</a></h3><br>&nbsp;
+		Цикл <a class="HL">for</a> исполняет блок команд, пока заданное условие является истинным. Например,<br><br>&nbsp;  
+		<a class="Code">
+			for (i=1;i&lt;=30;i++) { 
+   				document.write (i+'&lt;br /&gt;');  
+			}</a> 
+ 		<h3 style="text-align: center;">Оператор <a class="HL">while</a> </h3><br>&nbsp;
+		Цикл <a class="HL">while</a> выполняет блок кода, пока заданное условие истинно. Напрмер,<br><br>&nbsp; 
+		<a class="Code">	
+			var i=1; 
+			while (i&lt;=30) { 
+   			document.write (i+'<br />'); 
+   			i++; 
+			}
+		</a> 
+		<h3 style="text-align: center;">Оператор <a class="HL">do-while</a> </h3><br>&nbsp;
+		Цикл do..while часто называют циклом с постусловием, потому что в отличие от предыдущих циклов он вначале исполняет блок команд и только потом проверяет заданное условие. Если условие истинно, блок команд выполняется еще раз, если условие ложно, цикл завершает исполнение.<br>&nbsp; 
+		В отличие от оператора <a class="HL">while</a> в операторе <a class="HL">do-while</a> код выполняется хотя бы один раз, независимо от условия. В примере код выполнится один раз, так как условие ложно.<br><br>&nbsp;  
+ 		<a class="Code">
+			var i=20; 
+			do { 
+  			 	document.write('Я студент (от лат. studens — усердно 
+				работающий, занимающийся) БГТУ'); 
+				} 
+			while (i&lt;=3);	
+		</a>
+	</div>
+	<img src="../img/Line.png"  max-width="800px"><br><br></div>
+	<div id="Finish"><br><img src="../img/Finish.png"></div>
+		
+<header class="header">
+  <div class="hamburger">
+    <button class="button hamburger__button js-menu__toggle">
+      <span class="hamburger__label">Open menu</span>
+    </button>
+  </div>
+  <nav class="menu">
+    <ul class="list menu__list">
+      <li class="menu__group">
+        <a href="../MobileMain.html" class="link menu__link"><br>Стартовая</a>
+      </li><li class="menu__group">
+        <a href="../HTML/MHTML.html" class="link menu__link"><br>HTML</a>
+      </li>
+      <li class="menu__group">
+        <a href="../CSS/MCSS.html" class="link menu__link"><br>CSS</a>
+      </li>
+      <li class="menu__group">
+        <a href="../HTML/MtestHTML.html" class="link menu__link"><br>Тест по HTML</a>
+      </li>
+      <li class="menu__group">
+        <a href="MtestCSS.html" class="link menu__link"><br>Тест по CSS</a>
+      </li>
+      <li class="menu__group">
+        <a href="../JS/MtestJS.html" class="link menu__link"><br>Тест по JS</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+	<script>
+	(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.nodeMenu = settings.nodeMenu;
+      settings.nodeMenuButton.addEventListener('click', this.toggle.bind(this));
+    }
+
+    toggle() {
+      return this.nodeMenu.classList.toggle('js-menu_activated');
+    }
+  }
+
+  let nodeMenu = document.querySelector('body');
+  
+  new Menu({
+    nodeMenu: nodeMenu,
+    nodeMenuButton: nodeMenu.querySelector('.js-menu__toggle')
+  });
+})();
+	</script>
+	
+	<script>/* смена HTMLPanel */
+		function swapHTML(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
+		}
+		function HTMLBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/JSCode.png)";
+		}
+	</script>
+	<script>/* смена CSSPanel */
+		function swapCSS(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSCode.png)";
+		}
+
+		function CSSBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/JSCode.png)";
+		}
+
+	</script>
+	<script>/* смена HTMLTestPanel */
+		function swapHTMLT(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLTest.png)";
+		}
+		function HTMLTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/JSCode.png)";
+		}
+	</script>	
+	<script>/* смена CSSTestPanel */
+		function swapCSST(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
+		}
+
+		function CSSTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/JSCode.png)";
+		}
+	</script>
+	<script>/* смена JSTestPanel*/
+		function swapJST(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/JSTest.png)";
+		}
+		function JSTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/JSCode.png)";
+		}
+	</script>	
+	<script>/* часы */
+		window.onload = function(){
+		window.setInterval(function(){
+			var now = new Date();
+			var clock = document.getElementById("clock");
+			clock.innerHTML = now.toLocaleTimeString();
+			}, 1000);
+		};
+	</script>
+	<script>
+		var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+			}
+		};
+		if(isMobile.Windows(){
+		location.href='JS.html';
+}
+	</script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+﻿ <!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="MCSS.css" >
+	<link rel="stylesheet" type="text/css" href="../MNavig.css" >
+	<title>EasyCode.By</title>
+</head>
+<body bgcolor = "#F5F5DC"  background="../img/BackGroud.jpg" >
+		<div id ="Top"><img src="../img/Line.png"  max-width="600px" > 	<br>
+ 			<img src="../img/Logo.png"><br>
+			<img src="../img/Line.png"  max-width="600px" > 
+		</div>
+<div id ="Table"><br><br><img src="../img/Line.png"  max-width="800px"><br>
+		<h2>CSS</h2>
+		<div class="Scroll">&nbsp;
+			<h3 style="text-align: center;">Списки (свойство list-style-type).</h3>&nbsp;
+			Нумерованные (значения <a class="HL">decimal</a>, <a class="HL">lower-latin</a>, <a class="HL">lower-roman</a>, <a class="HL">upper-latin</a>, <a class="HL">upper-roman</a>) <br>&nbsp;
+			Маркированные (значения <a class="HL">none</a>, <a class="HL">disc</a>, <a class="HL">circle</a>, <a class="HL">square</a>) <br>&nbsp;
+			Использование маркера-картинки (свойство <a class="HL">list-style-image</a>)<br><br>
+			<h3 style="text-align: center;">Ссылки</h3>&nbsp;  
+			Ссылки могут находиться в четырех различных состояниях и каждое из этих состояний может быть отдельно оформлено с помощью специальных псевдо-классов: 
+			<li>  <a class="HL">a:link</a> определяет оформление обычной не посещенной ссылки;</li> 
+			<li>  <a class="HL">a:visited</a> определяет оформление посещенной пользователем ссылки;</li> 
+			<li>  <a class="HL">а:hover</a>  определяет оформление ссылки, на которую наведен курсор мыши;</li> 
+			<li>  <a class="HL">a:active</a> определяет оформление ссылки, на которую щелкнули мышкой.</li><br><br>
+			<h3 style="text-align: center;">Таблицы</h3>&nbsp;
+			Ширина (свойство <a class="HL">width</a>, устанавливается в пикселях или %, можно использовать cm и em).<br>&nbsp;  
+			Высота  (свойство  <a class="HL">height</a>, указывается в пикселях, можно использовать cm и em).<br>&nbsp;
+			Оформление  границ  (свойство <a class="HL">border</a> позволяет одновременно установить толщину, стиль и цвет границы вокруг элемента. <br>&nbsp;
+		  	Выравнивание текста в таблице (свойство <a class="HL">text-align</a> значения <a class="HL">right</a>, <a class="HL">left,center</a>, свойство <a class="HL">vertical-align</a> значения <a class="HL">top</a>, <a class="HL">middle</a>, <a class="HL">bottom</a>). <br>&nbsp;
+		 	Отступ содержимого в ячейке (свойство <a class="HL">padding</a>).<br><br>&nbsp; 
+			<h3 style="text-align: center;">Псевдо-классы</h3>  
+			<li> <a class="HL">first-child</a> позволяет выбрать элемент, который является первым потомком в его родительском элементе;</li>
+			<li>  <a class="HL">first-letter</a>  позволяет  оформить  первую  букву  указанного элемента; </li>
+			<li>  <a class="HL">first-line</a>  позволяет  оформить  первую  строчку  указанного элемента; </li>
+			<li>  <a class="HL">before</a>, <a class="HL">after</a> позволяет вставлять произвольное содержимое до и после указанных элементов.</li><br>
+			<h3 style="text-align: center;">Границы</h3>&nbsp;
+			Стиль  границ  HTML-элемента  (свойство <a class="HL">border-style</a>  значения 
+			<a class="HL">solid</a>, <a class="HL">dashed</a>, <a class="HL">dotted</a>, <a class="HL">double</a>).<br>&nbsp;
+			Цвет границы (свойство <a class="HL">border-color</a>).<br>&nbsp;
+			Толщина границы (свойство <a class="HL">border-width</a> значения в пикселях или 
+			<a class="HL">thin</a>, <a class="HL">medium</a>, <a class="HL">thick</a>).<br>&nbsp;
+			Задание стилей для отдельных сторон, названия сторон перечислены на рисунке:<br>&nbsp; 
+			<img src="../img/CSS/pic1.png"  max-width="800px"><br><br>&nbsp;
+			Способ быстрого задания стилей границ.<br>&nbsp; 
+			Пример1. <a class="HL">Border-style:dashed double solid groove</a> – к верхней границе будет применено <a class="HL">dashed</a>, к правой <a class="HL">double</a>, к нижней <a class="HL">solid</a>, а к левой <a class="HL">groove</a>.<br>&nbsp; 
+			Пример2. <a class="HL">Border-style:dashed double</a> – верхняя и нижняя граница будут оформлены как <a class="HL">dashed</a>, а левая и правая граница как <a class="HL">double</a>.<br>&nbsp; 
+			Сокращенная форма записи объединяет все свойства оформления границ в одном свойстве <a class="HL">border</a>. Порядок следования свойств: <a class="HL">border-width</a>,  <a class="HL">border-style</a>,  <a class="HL">border-color</a>  (можно пропускать неиспользуемые свойства). Пример: <a class="HL">border:1px solid</a>.<br><br>&nbsp;
+			<h3 style="text-align: center;">Отступы</h3> (величина в пикселях (px), сантиметрах (cm), процентах (%), em):<br>&nbsp; 
+			<li>внутренние (свойство <a class="HL">padding</a>); </li>
+			<li>внешние (свойства <a class="HL">margin</a>); </li>
+			<li>величина отступа может быть задана отдельно для каждой стороны элемента. </li><br>&nbsp;
+			Краткая форма записи: <a class="HL">padding: 60px 20px 40px 50px; margin: 30px 50px;</a>.<br><br>&nbsp;
+			<h3 style="text-align: center;">Отображение элементов</h3><br>&nbsp; 
+		  	Существуют два способа отображения элементов: <a class="HL">visibility:hidden</a> и <a class="HL">display:none</a>).<br>&nbsp;
+			<h3 style="text-align: center;">Размещение элементов</h3>
+			Местоположение элементов задается с помощью следующих CSS свойств:<br>&nbsp; 
+			<li>  <a class="HL">top</a> – величина смещения текущего элемента от верхнего края родительского элемента; </li>
+			<li>  <a class="HL">bottom</a> – от нижнего края родительского элемента; </li>
+			<li>  <a class="HL">left</a> – от левого края родительского элемента; </li>
+			<li>  <a class="HL">right</a> – от правого края родительского элемента.<br><br>&nbsp;  
+			Описанные выше свойства позиционирования не вступят в силу пока Вы не зададите способ размещения. В CSS существуют 4 различных способа размещения элементов: </li>
+			<li> статическое (<a class="HL">position:static</a>) действует по умолчанию, элементы всегда отображаются там, где они были объявлены (свойства  <a class="HL">top</a>, <a class="HL">bottom</a>, <a class="HL">left</a> и <a class="HL">right</a> не работают со статичными элементами); </li>
+			<li> фиксированное (<a class="HL">position:fixed</a>) элементы не изменяют своего местоположения даже при прокрутке окна браузера (свойства <a class="HL">top</a>, <a class="HL">bottom</a>, <a class="HL">left</a>, <a class="HL">right</a> работают); </li>
+			<li> относительное (<a class="HL">position:relative</a>);</li> 
+			<li> абсолютное (<a class="HL">position:absolute</a>). </li><br>&nbsp;
+			Наложение элементов (свойство <a class="HL">z-index</a> значение – любое число, может быть отрицательное).
+		</div>
+		<img src="../img/Line.png"  max-width="800px"><br>
+		<h3>Для предварительного знакомства c блоковой моделью внимательно посмотрите следующий HTML документ и его отображение браузером. </h3>
+		<div class="Scroll">
+			<p class="Code">
+			&lt;html&gt;<br> 
+			&lt;head&gt; <br>
+			&lt;style type="text/css"&gt; <br>
+			#wrap { <br>
+				margin:0px; <br>
+				padding:20px; <br>
+				height:160px; <br>
+				background-color:yellow; <br>
+			} <br>
+			.ex1 { <br>
+				border:10px red solid; <br>
+				margin-left:50px; <br>
+				margin-right:10px; <br>
+				padding:15px; <br>
+				background-color:green; <br>
+				color:white; <br>
+			} <br>
+			.ex2 { <br>
+				border:5px brown solid; <br>
+				margin-top:30px; <br>
+				margin-left:250px; <br>
+				margin-right:70px; <br>
+				padding:15px; <br>
+				background-color:green; <br>
+				color:white; <br>
+			} <br>
+			&lt;/style&gt; <br>
+			&lt;/head&gt; &lt;body&gt; <br>
+			&lt;div id="wrap"&gt; <br>
+			&lt;div class="ex1"&gt;Содержимое первого элемента&lt;/div&gt;<br>
+			&lt;div class="ex2"&gt;Содержимое второго элемента&lt;/div&gt; <br>
+			&lt;/div&gt; <br>
+			&lt;/body&gt; <br>
+			&lt;/html&gt;
+			</p><br><br><br>
+			<strong>В окне браузера получим:</strong>
+			<img src="../img/CSS/pic2.PNG" max-width="600px">			
+		</div>
+		<img src="../img/Line.png"  max-width="800px"><br>
+		<h2>Новые возможности в CSS3</h2>
+		<div class="Scroll">
+			<h3 style="text-align: center;">Фон</h3>&nbsp;
+			Свойство background-size устанавливает размер фоновых изображений (в пикселях или в процентах), например <a class="HL">background- size:150px 250px;</a><br>&nbsp; 
+			В свойстве <a class="HL">background-image</a> можно указать несколько фоновых изображений одновременно:<br> 
+			<li><a class="HL">background-image: url (wis.gif), url (mount3.jpg);</a></li> 
+			<li><a class="HL">background-size: 150px 40px, 100% 100%;</a>. </li><br>&nbsp; 
+ 			<h3 style="text-align: center;">Цвет</h3>&nbsp; 
+			<li>с помощью HSL – оттенок, насыщенность, яркость; </li>
+			<li>с помощью RGBA – цвет и прозрачность; </li>
+			<li>с помощью HSLA – цвет и прозрачность. </li><br>&nbsp;
+ 			<h3 style="text-align: center;">Границы </h3>&nbsp;
+			Свойство <a class="HL">border-radius</a> позволяет делать углы элементов глаженными.<br>&nbsp; 
+			С помощью свойства <a class="HL">box-shadow</a> можно добавлять к элементам страницы тени.<br>&nbsp; 
+			С помощью свойства <a class="HL">border-image</a> можно вставлять произвольные изображения в качестве границы элемента. 
+ 			<h3 style="text-align: center;">Шрифт</h3>&nbsp; 
+			Свойство <a class="HL">@font-face</a> позволяет подключать шрифты.<br><br> 
+			<p class="Code">
+			@font-face  
+			{font-family:opensans;/* Задаем имя шрифта */ 
+				src:url('opensans.woff')/*  Указываем  местонахождение 
+			нашего шрифта */ }</p><br><br> 
+ 			<h3 style="text-align: center;">Текст </h3>&nbsp;
+			Свойство text-shadow добавляет к тексту элементов тени (можно несколько). <br>&nbsp;
+			Указывается величина смещения тени от текста по горизонтали и вертикали (может быть отрицательной), а также радиус размытия и цвет тени. Примеры:<br><br> 
+			<a class="HL">text-shadow:3px 2px #FFAE00; <br>
+			text-shadow:1px 1px 10px #FFAE00;<br> 
+			text-shadow:2px 2px 2px #FFAE00, 2px 2px 15px #1435AD;</a><br><br>&nbsp; 
+			Свойство <a class="HL">text-overflow</a> указывает, что должно случиться с текстом, вышедшем за пределы границ элемента.<br> 
+ 			<h3 style="text-align: center;">Трансформации</h3>&nbsp; 
+			Cвойство  <a class="HL">transform</a> трансформирует элементы. Его значение – функция трансформирования: 
+			<li><a class="HL">translate(x,y)</a> смещает элемент на указанное количество пикселей по осям X и Y <a class="HL">rotate(градусы)</a> поворачивает элемент на указанное количество градусов по часовой стрелке;</li> 
+			<li><a class="HL">scale(x,y)</a> растягивает элемент в ширину или высоту;</li> 
+			<li><a class="HL">skew(x,y)</a> задает перекосы по оси X и Y под заданным углом.</li>  
+ 			<h3 style="text-align: center;">Градиент </h3>&nbsp;
+			В CSS3 имеются встроенные свойства для создания градиентов. Для поддержки градиентов требуется добавить префиксы: для IE10+ требуется  префикс -ms, для Chrome и Safari префикс -webkit, для Opera префикс -o и для Firefox префикс –moz. 
+			&mdash; линейный градиент <a class="HL">linear-gradient</a>; 
+			&mdash; сферический градиент <a class="HL">radial-gradient</a>. 
+ 			<h3 style="text-align: center;">Переходы</h3>&nbsp; 
+			С помощью свойства <a class="HL">transition</a> можно создавать эффекты перехода, указав какое CSS свойство будет изменяться и скорость выполнения этих изменений в секундах. Чтобы добавить эффект перехода к нескольким свойствам, надо просто перечислить их названия через запятую.
+		</div>
+		<img src="../img/Line.png"  max-width="800px"><br><br><br>
+	</div>
+	<div id="Finish"><br><img src="../img/Finish.png" ></div>
+		
+<header class="header">
+  <div class="hamburger">
+    <button class="button hamburger__button js-menu__toggle">
+      <span class="hamburger__label">Open menu</span>
+    </button>
+  </div>
+  <nav class="menu">
+    <ul class="list menu__list">		
+      <li class="menu__group">
+        <a href="../MobileMain.html" class="link menu__link"><br>Стартовая</a>
+      </li>
+      <li class="menu__group">
+        <a href="../HTML/MHTML.html" class="link menu__link"><br>HTML</a>
+      </li>
+      <li class="menu__group">
+        <a href="../JS/MJS.html" class="link menu__link"><br>JS</a>
+      </li>
+      <li class="menu__group">
+        <a href="../HTML/MtestHTML.html" class="link menu__link"><br>Тест по HTML</a>
+      </li>
+      <li class="menu__group">
+        <a href="../CSS/MtestCSS.html" class="link menu__link"><br>Тест по CSS</a>s
+      </li>
+      <li class="menu__group">
+        <a href="MtestJS.html" class="link menu__link"><br>Тест по JS</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+	<script>
+	(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.nodeMenu = settings.nodeMenu;
+      settings.nodeMenuButton.addEventListener('click', this.toggle.bind(this));
+    }
+
+    toggle() {
+      return this.nodeMenu.classList.toggle('js-menu_activated');
+    }
+  }
+
+  let nodeMenu = document.querySelector('body');
+  
+  new Menu({
+    nodeMenu: nodeMenu,
+    nodeMenuButton: nodeMenu.querySelector('.js-menu__toggle')
+  });
+})();
+	</script>
+	
+	<script>/* смена HTMLPanel */
+		function swapHTML(){
+			document.getElementById('Panel').style.backgroundImage="url(img/HTMLCode.png)";
+			}
+		function HTMLBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(img/CSSCode.png)";
+			}
+	</script>
+	<script>/* смена JSPanel*/
+		function swapJS(){
+			document.getElementById('Panel').style.backgroundImage="url(img/JSCode.png)";
+			}
+		function JSBack(){ 
+				document.getElementById('Panel').style.backgroundImage="url(img/CSSCode.png)";
+			}
+	</script>
+		<script>/* смена HTMLTestPanel */
+		function swapHTMLT(){
+			document.getElementById('Panel').style.backgroundImage="url(img/HTMLTest.png)";
+			}
+		function HTMLTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(img/CSSCode.png)";
+			}
+	</script>	
+
+	<script>/* смена CSSTestPanel */
+		function swapCSST(){
+			document.getElementById('Panel').style.backgroundImage="url(img/CSSTest.png)";
+			}
+		function CSSTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(img/CSSCode.png)";
+			}
+	</script>
+
+
+	<script>/* смена JSTestPanel*/
+		function swapJST(){
+			document.getElementById('Panel').style.backgroundImage="url(img/JSTest.png)";
+			}
+		function JSTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(img/CSSCode.png)";
+			}
+	</script>		
+	<script>/* часы */
+		window.onload = function(){
+			window.setInterval(function(){
+			var now = new Date();
+			var clock = document.getElementById("clock");
+			clock.innerHTML = now.toLocaleTimeString();
+			}, 1000);
+		};
+	</script>
+	<script>
+		var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+			}
+		};
+		if(isMobile.Windows(){
+		location.href='CSS.html';
+}
+	</script>
+</body>
+</html>

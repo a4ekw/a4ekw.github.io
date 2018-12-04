@@ -1,0 +1,225 @@
+﻿ <!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="MHTML.css" >
+	<link rel="stylesheet" type="text/css" href="../MNavig.css" >
+	<title>EasyCode.By</title>
+</head>
+<body bgcolor = "#F5F5DC"  background="../img/BackGroud.jpg" >
+	<div id ="Top"><img src="../img/Line.png"  max-width="600px" ><br>
+ 			<img src="../img/Logo.png"><br>
+			<img src="../img/Line.png"  max-width="600px" > 
+		</div>
+	<div id ="Table"><br><img src="../img/Line.png"  max-width="800px"><br> 
+		<h2>HTML</h2>
+    	<div class="Scroll">&nbsp;
+			HTML (Hyper Text Markup Language) – язык разметки гипертекста. Для разметки HTML документа используют теги (флаги разметки).<br>&nbsp;
+			Тег – это определенная последовательность символов, заключенные между знаками &lt; (больше) и &gt; (меньше).<br>&nbsp;
+			Для того, чтобы создать HTML документ необходимо:<br> <br>&nbsp;
+			<li>открыть любой текстовый редактор (например, блокнот встроенный в Windows);</li> &nbsp;
+			<li> набрать произвольный текст и разметить его HTML тэгами;</li>&nbsp;
+			<li> сохранить файл с расширением .htm или .html.</li><br>
+			Теперь если открыть созданный файл с помощью веб-браузера, он будет отображен как веб-страница.<br>&nbsp;
+			Структура HTML-документа: <br><br>&nbsp;
+			<p class="Code">&lt;HTML&gt;<br>&nbsp;
+				&lt;HEAD&gt;<br>&nbsp;
+				&lt;TITLE&gt;простое название&lt;/TITLE &gt;<br>&nbsp;
+				&lt;/HEAD&gt;<br>&nbsp;
+				&lt;BODY&gt;<br><br>&nbsp;
+				Содержание страницы<br><br>&nbsp;; 
+				&lt;/BODY&gt;<br>&nbsp;
+				&lt;/HTML&gt;<br><br>&nbsp;
+			</p>
+			Параметры документа задаются через тег <a class="HL">&lt; BODY &gt;</a>. Параметры – это специальные символьные команды, которые «понимает» браузер.<br>
+			Тег BODY имеет следующие атрибуты: <br><br>&nbsp;
+			&mdash;  <a class="HL">bgcolor</a> – цвет фона задан по схеме RGB; <br>&nbsp;
+			&mdash;  <a class="HL">background</a> – фон – графический файл; <br>&nbsp;
+			&mdash;  <a class="HL">text</a> – цвет текста; <br>&nbsp;
+			&mdash;  <a class="HL">link</a> – цвет ссылки;<br> &nbsp;
+			&mdash;  <a class="HL">alink</a> – цвет активной ссылки; <br>&nbsp;
+			&mdash;  <a class="HL">vlink</a> – цвет посещенной ссылки. <br><br>&nbsp;
+			Шрифт задается тегом <a class="HL">FONT</a>, который имеет следующие атрибуты: <a class="HL">face</a> – имена шрифтов, разделенные запятыми, size – размер от 1 до 7 (по умолчанию 3), color – цвет шрифта. <br>&nbsp;
+			В HTML существуют специальные теги для заголовков: от Н1 (самого крупного) до Н6 (самого мелкого). <br>&nbsp;
+			Списки на Web-страницах, бывают маркированные (<a class="HL">&lt;UL&gt;</a>– начало текста списка, <a class="HL">&lt;LI&gt;</a> – начало каждого элемента в списке) и нумерованные (<a class="HL">&lt;OL&gt;</a> – начало текста списка, <a class="HL">&lt;LI&gt;</a> – начало каждого элемента в списке). Маркером списка может быть рисунок.<br>&nbsp;
+			Атрибут TYPE позволяет изменить вид маркера. Значения атрибута: <br><br>&nbsp;
+			&mdash;  circle – ○; <br>&nbsp;
+			&mdash;  disk – ●; <br>&nbsp;
+			&mdash;  square – ■; <br>&nbsp;
+			&mdash;  A – A, B, C; <br>&nbsp;
+			&mdash;  а – a, b, c; <br>&nbsp;
+			&mdash;  I– I, II, III; <br>&nbsp;
+			&mdash;  i – i, ii, iii; <br>&nbsp;
+			&mdash;  1 – 1, 2, 3. <br>&nbsp;
+    	</div>
+		<img src="../img/Line.png"  max-width="800px"><br>
+		<h2>Таблицы в HTML</h2>
+		<div class="Scroll">&nbsp;
+			Элемент  <a class="HL">&lt;table&gt;</a> служит контейнером для элементов, определяющих содержимое таблицы. Любая таблица состоит из:<br>
+			<li>1. строк </li>
+			<li>2. ячеек,  которые  задаются  с  помощью  тегов  <a class="HL">&lt;tr&gt;</a>  и  <a class="HL">&lt;td&gt;</a>.</li> <br>&nbsp;
+			Для отображения границ таблицы используется атрибут border. С помощью тэга <a class="HL">&lt;th&gt;</a> можно создать табличный заголовок. Текст элемента th центрируется и выделяется жирным шрифтом. С помощью атрибута colspan можно указать на сколько столбцов должна быть растянута указанная ячейка, а с помощью атрибута rowspan – на сколько строк должна быть растянута указанная ячейка. 
+		</div>
+		<img src="../img/Line.png"  max-width="800px">
+		<h2>Ссылки на Web-страницах,<br> Вставка изображений,<br> Тег <a class="HL">&lt;div&gt;</a>, Тег <a class="HL">&lt;span&gt;</a></h2>
+		<div class="Scroll">
+			<h3 style="text-align: center;">Ссылки на Web-страницах.</h3>&nbsp;	
+			Ссылки являются основой гипертекстовых документов и позволяют переходить с одной веб-страницы на другую. Реализуются с помощью тега A. Общий синтаксис создания ссылок следующий:<br><br>&nbsp;
+			<a class="HL">&lt;a href="URL"&gt;текст ссылки&lt;/a&gt;</a><br><br>&nbsp;
+			Атрибут <a class="HL">hre</a> определяет URL адрес документа, на который следует перейти (например "cat.html"), а содержимое контейнера <a class="HL">&lt;a&gt;</a>
+			является ссылкой.<br><br>
+ 			<h3 style="text-align: center;">Вставка изображений.</h3>&nbsp;
+			Для добавления в HTML документ изображений используется тэг 
+			<a class="HL">&lt;img&gt;</a>. Атрибут src тэга <a class="HL">&lt;img&gt;</a> должен содержать адрес, по которому 
+			находится картинка, которая должна быть отображена.<br>&nbsp;
+			Например, 
+			<a class="HL">&lt;img src="mount.jpg" /&gt;</a>. 
+			<h3 style="text-align: center;">Тег &lt;div&gt;.</h3>&nbsp;
+			Тег <a class="HL">&lt;div&gt;</a> является блочным элементом и предназначен для выделения фрагмента документа с целью изменения вида содержимого. Как правило, вид блока управляется с помощью стилей. 
+			<h3 style="text-align: center;">Тег  &lt;span &gt;</h3>&nbsp;
+			Тег   <a class="HL">&lt;span &gt;</a> предназначен для определения строчных элементов
+			документа. В отличие от блочных элементов, таких как <a class="HL">&lt;table &gt;</a>, <a class="HL">&lt;p &gt;</a> или  <a class="HL">&lt;div&gt;</a>, с помощью тега  <a class="HL">&lt;span&gt;</a>; можно выделить часть информации внутри других тегов и установить для нее свой стиль. Например, внутри абзаца (тега  <a class="HL">&lt;p&gt;</a>) можно изменить цвет и размер первой буквы, если добавить начальный и конечный тег <a class="HL">&lt;span&gt;</a> и определить для него стиль текста.
+		</div>
+		<img src="../img/Line.png"  max-width="800px">
+		<h2>Подключение CSS</h2>
+		<div class ="Scroll">&nbsp;
+			Внешнее. Самый мощный и удобный способ определения стилей и правил  для  сайта. Стили хранятся в отдельном файле, который может быть использован для любых веб-страниц. Для подключения таблицы связанных стилей используется тег <a class="HL">&lt;link&gt;</a>в  заголовке страницы.<br> &nbsp;
+			Внутреннее. Стиль определяется в самом документе и обычно располагается в заголовке веб-страницы. По своей гибкости и возможностям этот  способ использования стиля уступает предыдущему, но также позволяет размещать все стили в одном месте. В данном случае, прямо в теле документа. Определение стиля задается тегом <a class="HL">&lt;style&gt;</a>.<br> &nbsp;
+			Строковое. Внутренний стиль являются по существу расширением для одиночного тега, используемого на веб-странице. Для определения стиля используется атрибут style, а его значения указываются с помощью языка таблицы стилей. 
+		</div>		
+		<img src="../img/Line.png"  max-width="800px">		
+		<h3 style="text-align: center; color: #186C00">Вы можете в любое время проеверить себя,<br>найдя тест по данному разделу в главном меню.</h3>
+		<img src="../img/Line.png"  max-width="800px"><br><br>
+	</div>
+	<div id="Finish"><br><img src="../img/Finish.png"  ></div>	
+	
+<header class="header">
+  <div class="hamburger">
+    <button class="button hamburger__button js-menu__toggle">
+      <span class="hamburger__label">Open menu</span>
+    </button>
+  </div>
+  <nav class="menu">
+    <ul class="list menu__list">
+      <li class="menu__group">
+        <a href="../MobileMain.html" class="link menu__link"><br>Стартовая</a>
+      </li>
+      <li class="menu__group">
+        <a href="../CSS/MCSS.html" class="link menu__link"><br>CSS</a>
+      </li>
+      <li class="menu__group">
+        <a href="../JS/MJS.html" class="link menu__link"><br>JS</a>
+      </li>
+      <li class="menu__group">
+        <a href="../HTML/MtestHTML.html" class="link menu__link"><br>Тест по HTML</a>
+      </li>
+      <li class="menu__group">
+        <a href="../CSS/MtestCSS.html" class="link menu__link"><br>Тест по CSS</a>
+      </li>
+      <li class="menu__group"> <a href="../JS/MtestJS.html" class="link menu__link"><br>
+        Тест по JS</a> </li>
+    </ul>
+  </nav>
+</header>
+
+	<script>
+	(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.nodeMenu = settings.nodeMenu;
+      settings.nodeMenuButton.addEventListener('click', this.toggle.bind(this));
+    }
+
+    toggle() {
+      return this.nodeMenu.classList.toggle('js-menu_activated');
+    }
+  }
+
+  let nodeMenu = document.querySelector('body');
+  
+  new Menu({
+    nodeMenu: nodeMenu,
+    nodeMenuButton: nodeMenu.querySelector('.js-menu__toggle')
+  });
+})();
+	</script>
+	
+	<script>/* смена CSSPanel */
+		function swapCSS(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSCode.png)";
+		}
+		function CSSBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
+		}
+	</script>
+	<script>/* смена JSPanel*/
+		function swapJS(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/JSCode.png)";
+		}
+		function JSBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
+		}
+	</script>
+	<script>/* смена HTMLTestPanel */
+		function swapHTMLT(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLTest.png)";
+		}
+		function HTMLTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
+		}
+	</script>	
+	<script>/* смена CSSTestPanel */
+		function swapCSST(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
+		}
+		function CSSTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
+		}
+	</script>
+	<script>/* смена JSTestPanel*/
+		function swapJST(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/JSTest.png)";
+		}
+		function JSTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
+		}
+	</script>	
+	<script>/* часы */
+		window.onload = function(){
+		window.setInterval(function(){
+			var now = new Date();
+			var clock = document.getElementById("clock");
+			clock.innerHTML = now.toLocaleTimeString();
+			}, 1000);
+		};
+	</script>
+	<script>
+		var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+			}
+		};
+		if(isMobile.Windows(){
+		location.href='HTML.html';
+}
+	</script>
+</body>
+</html>

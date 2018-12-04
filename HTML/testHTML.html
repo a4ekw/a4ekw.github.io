@@ -1,0 +1,161 @@
+﻿ <!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="testHTML.css" >
+	<title>EasyCode.By</title>
+</head>
+<body bgcolor = "#F5F5DC"  background="../img/BackGroud.jpg" >
+	<a href="index.html">
+		<div id ="Top"><img src="../img/Line.png"  max-width="600px" > 	<br>
+ 			<img src="../img/Logo.png"><br>
+			<img src="../img/Line.png"  max-width="600px" > 
+		</div>
+	</a> 
+	<div id="Navig"><img src="../img/Line.png"  width="155"><br>
+		<a href="HTML.html">
+			<div id="HTML" onmouseover="swapHTML();" onmouseout="HTMLBack();"><img src="../img/HTML.png"></div>
+		</a>
+		<a>
+			<div id="Test" onmouseover="swapHTMLT();" onmouseout="HTMLTBack();"><img src="../img/TestLogo.png"></div>
+		</a><br>
+		<a href="../CSS/CSS.html">
+			<div id="CSS" onmouseover="swapCSS();" onmouseout="CSSBack();"><img src="../img/CSS.png"></div>
+		</a>
+		<a href="../CSS/testCSS.html">
+			<div class="ListTest" onmouseover="swapCSST();" onmouseout="CSSTBack();"><img src="../img/TestLogo.png"></div>
+		</a><br>
+		<a href="../JS/JS.html">
+			<div id="JS" onmouseover="swapJS();" onmouseout="JSBack();"><img src="../img/JS.png"></div>
+		</a>
+		<a href="../JS/testJS.html">
+			<div class="ListTest" onmouseover="swapJST();" onmouseout="JSTBack();"><img src="../img/TestLogo.png"> </div>
+		</a>
+		<img src="../img/Line.png"  width="155px"><br>
+		<div id="clock"></div>
+	</div>
+	<div id="Panel"><br></div>
+	<div id ="Table"><br><img src="../img/Line.png"  max-width="800px"><br>
+		<p>Выполните задания теста:</p>
+		<h6>(Ответы указываются с маленькой буквы.)</h6>
+		<p class="Text">Элемент  &lt;<a class="Code">... </a>&gt; служит контейнером для элементов, определяющих содержимое таблицы.<br><input type="text" id="z_1"></p>
+		<p class="Text">Общий синтаксис создания ссылок следующий:<br>&lt;a <a class="Code">... </a>="../URL"&gt;текст ссылки&lt;/a&gt; <br><input type="text" id="z_2"></p>
+		<p class="Text">Для добавления в HTML документ изображений используется:<br>&lt;<a class="Code">... </a> src="mount.jpg" /&gt;<br><input type="text" id="z_3"></p>
+		<p class="Text">Тег &lt;<a class="Code">... </a>&gt; предназначен для определения строчных элементов документа. В отличие от блочных элементов, таких как &lt;table &gt;, &lt;p &gt; или &lt;div&gt;, с помощью тега &lt;<a class="Code">... </a>&gt;можно выделить часть информации внутри других тегов и установить для нее свой стиль.<br><input type="text" id="z_4"></p>
+		<p class="Text">Определение стиля задается тегом &lt;<a class="Code">... </a>&gt;<br><input type="text" id="z_5"></p>
+		
+		<button onClick="proverit();">Проверить</button>
+		<div id="rezultat"></div>
+		<script>
+			function proverit(){
+				pr_otv_1 = "table"; 
+				pr_otv_2 = "href";
+				pr_otv_3 = "img";
+				pr_otv_4 = "span"; 
+				pr_otv_5 = "style";
+				otv_uch_1 = document.getElementById('z_1').value;
+				otv_uch_2 = document.getElementById('z_2').value;
+				otv_uch_3 = document.getElementById('z_3').value;
+				otv_uch_4 = document.getElementById('z_4').value;
+				otv_uch_5 = document.getElementById('z_5').value;
+				ball = 0;
+				if(otv_uch_1 == pr_otv_1){
+					ball +=1;
+				}
+				if(otv_uch_2 == pr_otv_2){
+					ball +=1;
+				}
+				if(otv_uch_3 == pr_otv_3){
+					ball +=1;
+				}if(otv_uch_4 == pr_otv_4){
+					ball +=1;
+				}
+				if(otv_uch_5 == pr_otv_5){
+					ball +=1;
+				}
+				vsego_zadach = 5;
+				procent_vip = ball * 20;
+				document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+			}
+		</script> <br>
+    	<img src="../img/Line.png"  max-width="800px"><br><br>
+	</div>
+	<div id="Finish"><br><img src="../img/Finish.png"  >
+	</div>
+	<script>/* смена HTMLPanel */
+		function swapHTML(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLCode.png)";
+		}
+		function HTMLBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLTest.png)";
+		}
+	</script>
+	<script>/* смена CSSPanel */
+		function swapCSS(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSCode.png)";
+		}
+		function CSSBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLTest.png)";
+		}
+	</script>
+	<script>/* смена JSPanel*/
+		function swapJS(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLTest.png)";
+		}
+		function JSBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLTest.png)";
+		}
+	</script>
+	<script>/* смена CSSTestPanel */
+		function swapCSST(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/CSSTest.png)";
+		}	
+		function CSSTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLTest.png)";
+		}
+	</script>
+	<script>/* смена JSTestPanel*/
+		function swapJST(){
+			document.getElementById('Panel').style.backgroundImage="url(../img/JSTest.png)";
+		}
+		function JSTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(../img/HTMLTest.png)";
+		}
+	</script>	
+	<script>/* часы */
+		window.onload = function(){
+			window.setInterval(function(){
+			var now = new Date();
+			var clock = document.getElementById("clock");
+			clock.innerHTML = now.toLocaleTimeString();
+			}, 1000);
+		};
+	</script>
+	<script>
+		var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+			}
+		};
+		if(isMobile.Android()){
+		location.href='MtestHTML.html';
+}
+	</script>
+</body>
+</html>

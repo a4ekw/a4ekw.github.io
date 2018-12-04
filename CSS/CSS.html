@@ -1,0 +1,260 @@
+ <!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS.css" >
+	<title>EasyCode.By</title>
+</head>
+<body bgcolor = "#F5F5DC"  background="../img/BackGroud.jpg" >
+	<a href="../index.html">
+			<div id ="Top"><img src="../img/Line.png"  max-width="600px" > 	<br>
+ 			<img src="../img/Logo.png"><br>
+			<img src="../img/Line.png"  max-width="600px" > 
+		</div>
+	</a> 
+	<div id="Navig"><img src="../img/Line.png"  width="155"><br>
+		<a href="../HTML/HTML.html">
+			<div id="HTML" onmouseover="swapHTML();" onmouseout="HTMLBack();"><img src="../img/HTML.png"></div>
+		</a>
+		<a href="../HTML/testHTML.html">
+			<div class="ListTest" onmouseover="swapHTMLT();" onmouseout="HTMLTBack();"><img src="../img/TestLogo.png"></div>
+		</a><br>
+		<a>
+			<div id="CSS" onmouseover="swapCSS();" onmouseout="CSSBack();"><img src="../img/CSS.png"></div>
+		</a>
+		<a href="../CSS/testCSS.html">
+			<div class="ListTest" onmouseover="swapCSST();" onmouseout="CSSTBack();"><img src="../img/TestLogo.png"></div>
+		</a><br>
+		<a href="../JS/JS.html">
+			<div id="JS" onmouseover="swapJS();" onmouseout="JSBack();"><img src="../img/JS.png"></div>
+		</a>
+		<a href="../JS/testJS.html">
+			<div class="ListTest" onmouseover="swapJST();" onmouseout="JSTBack();"><img src="../img/TestLogo.png"> </div>
+		</a>
+		<img src="../img/Line.png"  width="155px"><br>
+		<div id="clock"></div>
+	</div>
+	<div id="Panel"><br></div>
+	<div id ="Table"><br><img src="../img/Line.png"  max-width="800px"><br>
+		<h2>CSS</h2>
+		<div class="Scroll">&nbsp;
+			<h3 style="text-align: center;">Списки (свойство list-style-type).</h3>&nbsp;
+			Нумерованные (значения <a style="color:#000080">decimal</a>, <a style="color:#000080">lower-latin</a>, <a style="color:#000080">lower-roman</a>, <a style="color:#000080">upper-latin</a>, <a style="color:#000080">upper-roman</a>) <br>&nbsp;
+			Маркированные (значения <a style="color:#000080">none</a>, <a style="color:#000080">disc</a>, <a style="color:#000080">circle</a>, <a style="color:#000080">square</a>) <br>&nbsp;
+			Использование маркера-картинки (свойство <a style="color:#000080">list-style-image</a>)<br><br>
+			<h3 style="text-align: center;">Ссылки</h3>&nbsp;  
+			Ссылки могут находиться в четырех различных состояниях и каждое из этих состояний может быть отдельно оформлено с помощью специальных псевдо-классов: 
+			<li>  <a style="color:#000080">a:link</a> определяет оформление обычной не посещенной ссылки;</li> 
+			<li>  <a style="color:#000080">a:visited</a> определяет оформление посещенной пользователем ссылки;</li> 
+			<li>  <a style="color:#000080">а:hover</a>  определяет оформление ссылки, на которую наведен курсор мыши;</li> 
+			<li>  <a style="color:#000080">a:active</a> определяет оформление ссылки, на которую щелкнули мышкой.</li><br><br>
+			<h3 style="text-align: center;">Таблицы</h3>&nbsp;
+			Ширина (свойство <a style="color:#000080">width</a>, устанавливается в пикселях или %, можно использовать cm и em).<br>&nbsp;  
+			Высота  (свойство  <a style="color:#000080">height</a>, указывается в пикселях, можно использовать cm и em).<br>&nbsp;
+			Оформление  границ  (свойство <a style="color:#000080">border</a> позволяет одновременно установить толщину, стиль и цвет границы вокруг элемента. <br>&nbsp;
+		  	Выравнивание текста в таблице (свойство <a style="color:#000080">text-align</a> значения <a style="color:#000080">right</a>, <a style="color:#000080">left,center</a>, свойство <a style="color:#000080">vertical-align</a> значения <a style="color:#000080">top</a>, <a style="color:#000080">middle</a>, <a style="color:#000080">bottom</a>). <br>&nbsp;
+		 	Отступ содержимого в ячейке (свойство <a style="color:#000080">padding</a>).<br><br>&nbsp; 
+			<h3 style="text-align: center;">Псевдо-классы</h3>  
+			<li> <a style="color:#000080">first-child</a> позволяет выбрать элемент, который является первым потомком в его родительском элементе;</li>
+			<li>  <a style="color:#000080">first-letter</a>  позволяет  оформить  первую  букву  указанного элемента; </li>
+			<li>  <a style="color:#000080">first-line</a>  позволяет  оформить  первую  строчку  указанного элемента; </li>
+			<li>  <a style="color:#000080">before</a>, <a style="color:#000080">after</a> позволяет вставлять произвольное содержимое до и после указанных элементов.</li><br>
+			<h3 style="text-align: center;">Границы</h3>&nbsp;
+			Стиль  границ  HTML-элемента  (свойство <a style="color:#000080">border-style</a>  значения 
+			<a style="color:#000080">solid</a>, <a style="color:#000080">dashed</a>, <a style="color:#000080">dotted</a>, <a style="color:#000080">double</a>).<br>&nbsp;
+			Цвет границы (свойство <a style="color:#000080">border-color</a>).<br>&nbsp;
+			Толщина границы (свойство <a style="color:#000080">border-width</a> значения в пикселях или 
+			<a style="color:#000080">thin</a>, <a style="color:#000080">medium</a>, <a style="color:#000080">thick</a>).<br>&nbsp;
+			Задание стилей для отдельных сторон, названия сторон перечислены на рисунке:<br>&nbsp; 
+			<img src="../img/CSS/pic1.png"  max-width="800px"><br><br>&nbsp;
+			Способ быстрого задания стилей границ.<br>&nbsp; 
+			Пример1. <a style="color:#000080">Border-style:dashed double solid groove</a> – к верхней границе будет применено <a style="color:#000080">dashed</a>, к правой <a style="color:#000080">double</a>, к нижней <a style="color:#000080">solid</a>, а к левой <a style="color:#000080">groove</a>.<br>&nbsp; 
+			Пример2. <a style="color:#000080">Border-style:dashed double</a> – верхняя и нижняя граница будут оформлены как <a style="color:#000080">dashed</a>, а левая и правая граница как <a style="color:#000080">double</a>.<br>&nbsp; 
+			Сокращенная форма записи объединяет все свойства оформления границ в одном свойстве <a style="color:#000080">border</a>. Порядок следования свойств: <a style="color:#000080">border-width</a>,  <a style="color:#000080">border-style</a>,  <a style="color:#000080">border-color</a>  (можно пропускать неиспользуемые свойства). Пример: <a style="color:#000080">border:1px solid</a>.<br><br>&nbsp;
+			<h3 style="text-align: center;">Отступы</h3> (величина в пикселях (px), сантиметрах (cm), процентах (%), em):<br>&nbsp; 
+			<li>внутренние (свойство <a style="color:#000080">padding</a>); </li>
+			<li>внешние (свойства <a style="color:#000080">margin</a>); </li>
+			<li>величина отступа может быть задана отдельно для каждой стороны элемента. </li><br>&nbsp;
+			Краткая форма записи: <a style="color:#000080">padding: 60px 20px 40px 50px; margin: 30px 50px;</a>.<br><br>&nbsp;
+			<h3 style="text-align: center;">Отображение элементов</h3><br>&nbsp; 
+		  	Существуют два способа отображения элементов: <a style="color:#000080">visibility:hidden</a> и <a style="color:#000080">display:none</a>).<br>&nbsp;
+			<h3 style="text-align: center;">Размещение элементов</h3>
+			Местоположение элементов задается с помощью следующих CSS свойств:<br>&nbsp; 
+			<li>  <a style="color:#000080">top</a> – величина смещения текущего элемента от верхнего края родительского элемента; </li>
+			<li>  <a style="color:#000080">bottom</a> – от нижнего края родительского элемента; </li>
+			<li>  <a style="color:#000080">left</a> – от левого края родительского элемента; </li>
+			<li>  <a style="color:#000080">right</a> – от правого края родительского элемента.<br><br>&nbsp;  
+			Описанные выше свойства позиционирования не вступят в силу пока Вы не зададите способ размещения. В CSS существуют 4 различных способа размещения элементов: </li>
+			<li> статическое (<a style="color:#000080">position:static</a>) действует по умолчанию, элементы всегда отображаются там, где они были объявлены (свойства  <a style="color:#000080">top</a>, <a style="color:#000080">bottom</a>, <a style="color:#000080">left</a> и <a style="color:#000080">right</a> не работают со статичными элементами); </li>
+			<li> фиксированное (<a style="color:#000080">position:fixed</a>) элементы не изменяют своего местоположения даже при прокрутке окна браузера (свойства <a style="color:#000080">top</a>, <a style="color:#000080">bottom</a>, <a style="color:#000080">left</a>, <a style="color:#000080">right</a> работают); </li>
+			<li> относительное (<a style="color:#000080">position:relative</a>);</li> 
+			<li> абсолютное (<a style="color:#000080">position:absolute</a>). </li><br>&nbsp;
+			Наложение элементов (свойство <a style="color:#000080">z-index</a> значение – любое число, может быть отрицательное).
+		</div>
+		<img src="../img/Line.png"  max-width="800px"><br>
+		<h3>Для предварительного знакомства c блоковой моделью внимательно посмотрите следующий HTML документ и его отображение браузером. </h3>
+		<div class="Scroll">
+			<p class="Code">
+			&lt;html&gt;<br> 
+			&lt;head&gt; <br>
+			&lt;style type="text/css"&gt; <br>
+			#wrap { <br>
+				margin:0px; <br>
+				padding:20px; <br>
+				height:160px; <br>
+				background-color:yellow; <br>
+			} <br>
+			.ex1 { <br>
+				border:10px red solid; <br>
+				margin-left:50px; <br>
+				margin-right:10px; <br>
+				padding:15px; <br>
+				background-color:green; <br>
+				color:white; <br>
+			} <br>
+			.ex2 { <br>
+				border:5px brown solid; <br>
+				margin-top:30px; <br>
+				margin-left:250px; <br>
+				margin-right:70px; <br>
+				padding:15px; <br>
+				background-color:green; <br>
+				color:white; <br>
+			} <br>
+			&lt;/style&gt; <br>
+			&lt;/head&gt; &lt;body&gt; <br>
+			&lt;div id="wrap"&gt; <br>
+			&lt;div class="ex1"&gt;Содержимое первого элемента&lt;/div&gt;<br>
+			&lt;div class="ex2"&gt;Содержимое второго элемента&lt;/div&gt; <br>
+			&lt;/div&gt; <br>
+			&lt;/body&gt; <br>
+			&lt;/html&gt;
+			</p><br><br><br>
+			<strong>В окне браузера получим:</strong>
+			<img src="../img/CSS/pic2.PNG" max-width="600px">			
+		</div>
+		<img src="../img/Line.png"  max-width="800px"><br>
+		<h2>Новые возможности в CSS3</h2>
+		<div class="Scroll">
+			<h3 style="text-align: center;">Фон</h3>&nbsp;
+			Свойство background-size устанавливает размер фоновых изображений (в пикселях или в процентах), например <a style="color:#000080">background- size:150px 250px;</a><br>&nbsp; 
+			В свойстве <a style="color:#000080">background-image</a> можно указать несколько фоновых изображений одновременно:<br> 
+			<li><a style="color:#000080">background-image: url (wis.gif), url (mount3.jpg);</a></li> 
+			<li><a style="color:#000080">background-size: 150px 40px, 100% 100%;</a>. </li><br>&nbsp; 
+ 			<h3 style="text-align: center;">Цвет</h3>&nbsp; 
+			<li>с помощью HSL – оттенок, насыщенность, яркость; </li>
+			<li>с помощью RGBA – цвет и прозрачность; </li>
+			<li>с помощью HSLA – цвет и прозрачность. </li><br>&nbsp;
+ 			<h3 style="text-align: center;">Границы </h3>&nbsp;
+			Свойство <a style="color:#000080">border-radius</a> позволяет делать углы элементов глаженными.<br>&nbsp; 
+			С помощью свойства <a style="color:#000080">box-shadow</a> можно добавлять к элементам страницы тени.<br>&nbsp; 
+			С помощью свойства <a style="color:#000080">border-image</a> можно вставлять произвольные изображения в качестве границы элемента. 
+ 			<h3 style="text-align: center;">Шрифт</h3>&nbsp; 
+			Свойство <a style="color:#000080">@font-face</a> позволяет подключать шрифты.<br><br> 
+			<p class="Code">
+			@font-face  
+			{font-family:opensans;/* Задаем имя шрифта */ 
+				src:url('opensans.woff')/*  Указываем  местонахождение 
+			нашего шрифта */ }</p><br><br> 
+ 			<h3 style="text-align: center;">Текст </h3>&nbsp;
+			Свойство text-shadow добавляет к тексту элементов тени (можно несколько). <br>&nbsp;
+			Указывается величина смещения тени от текста по горизонтали и вертикали (может быть отрицательной), а также радиус размытия и цвет тени. Примеры:<br><br> 
+			<a style="color:#000080">text-shadow:3px 2px #FFAE00; <br>
+			text-shadow:1px 1px 10px #FFAE00;<br> 
+			text-shadow:2px 2px 2px #FFAE00, 2px 2px 15px #1435AD;</a><br><br>&nbsp; 
+			Свойство <a style="color:#000080">text-overflow</a> указывает, что должно случиться с текстом, вышедшем за пределы границ элемента.<br> 
+ 			<h3 style="text-align: center;">Трансформации</h3>&nbsp; 
+			Cвойство  <a style="color:#000080">transform</a> трансформирует элементы. Его значение – функция трансформирования: 
+			<li><a style="color:#000080">translate(x,y)</a> смещает элемент на указанное количество пикселей по осям X и Y <a style="color:#000080">rotate(градусы)</a> поворачивает элемент на указанное количество градусов по часовой стрелке;</li> 
+			<li><a style="color:#000080">scale(x,y)</a> растягивает элемент в ширину или высоту;</li> 
+			<li><a style="color:#000080">skew(x,y)</a> задает перекосы по оси X и Y под заданным углом.</li>  
+ 			<h3 style="text-align: center;">Градиент </h3>&nbsp;
+			В CSS3 имеются встроенные свойства для создания градиентов. Для поддержки градиентов требуется добавить префиксы: для IE10+ требуется  префикс -ms, для Chrome и Safari префикс -webkit, для Opera префикс -o и для Firefox префикс –moz. 
+			&mdash; линейный градиент <a style="color:#000080">linear-gradient</a>; 
+			&mdash; сферический градиент <a style="color:#000080">radial-gradient</a>. 
+ 			<h3 style="text-align: center;">Переходы</h3>&nbsp; 
+			С помощью свойства <a style="color:#000080">transition</a> можно создавать эффекты перехода, указав какое CSS свойство будет изменяться и скорость выполнения этих изменений в секундах. Чтобы добавить эффект перехода к нескольким свойствам, надо просто перечислить их названия через запятую.
+		</div>
+		<img src="../img/Line.png"  max-width="800px"><br><br>
+	</div>
+	<div id="Finish"><br><img src="../img/Finish.png" ></div>	
+	<script>/* смена HTMLPanel */
+		function swapHTML(){
+			document.getElementById('Panel').style.backgroundImage="url(img/HTMLCode.png)";
+			}
+		function HTMLBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(img/CSSCode.png)";
+			}
+	</script>
+	<script>/* смена JSPanel*/
+		function swapJS(){
+			document.getElementById('Panel').style.backgroundImage="url(img/JSCode.png)";
+			}
+		function JSBack(){ 
+				document.getElementById('Panel').style.backgroundImage="url(img/CSSCode.png)";
+			}
+	</script>
+		<script>/* смена HTMLTestPanel */
+		function swapHTMLT(){
+			document.getElementById('Panel').style.backgroundImage="url(img/HTMLTest.png)";
+			}
+		function HTMLTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(img/CSSCode.png)";
+			}
+	</script>	
+
+	<script>/* смена CSSTestPanel */
+		function swapCSST(){
+			document.getElementById('Panel').style.backgroundImage="url(img/CSSTest.png)";
+			}
+		function CSSTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(img/CSSCode.png)";
+			}
+	</script>
+
+
+	<script>/* смена JSTestPanel*/
+		function swapJST(){
+			document.getElementById('Panel').style.backgroundImage="url(img/JSTest.png)";
+			}
+		function JSTBack(){ 
+			document.getElementById('Panel').style.backgroundImage="url(img/CSSCode.png)";
+			}
+	</script>		
+	<script>/* часы */
+		window.onload = function(){
+			window.setInterval(function(){
+			var now = new Date();
+			var clock = document.getElementById("clock");
+			clock.innerHTML = now.toLocaleTimeString();
+			}, 1000);
+		};
+	</script>
+	<script>
+		var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+			}
+		};
+		if(isMobile.Android()){
+		location.href='MCSS.html';
+}
+	</script>
+</body>
+</html>
