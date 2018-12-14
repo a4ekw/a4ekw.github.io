@@ -29,9 +29,3 @@ img {
 	border-radius: 15px 15px 15px 15px/5px ;
 	background-color: rgba(105, 105, 105, 0.3);
 }
-#Finish{
-	max-height: 200px;
-	max-width: 800px;
-	margin:5px auto;
-	text-align: center;
-}
