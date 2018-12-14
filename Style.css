@@ -127,12 +127,12 @@ img {
 	max-height: auto;
 }
 #XML{
-	height: 40px;
+	height: 170px;
 	color: #000080;
     text-align: center;
-	border:inset #0000FF;border:inset  blueviolet;
-	border-radius: 15px 15px 15px 15px/5px ;
-	background-color: rgba(105, 105, 105, 0.3);
+	border:inset  blueviolet;
+	border-radius: 0px 30px 30px 30px/30px ;
+	background-color:black;
 }
 #Finish{
 	max-height: 200px;

@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="XML.css"?>
 <Body>
-<Msg>Сайт создан в качестве курсового проекта.</Msg>
-<Cont>Email: lmv1996.96@mail.ru</Cont>
-
+	<Msg>Сайт создан в качестве курсового проекта.</Msg>
+	<Tabl>
+		<Mail>Для связи используйте наш Em@il:</Mail>
+		<Adr>lmv1996.96@mail.ru</Adr>
+	</Tabl>
 </Body>
